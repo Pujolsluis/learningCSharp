@@ -58,7 +58,9 @@ namespace PrimitiveDataTypes
 
         private void showIntValue()
         {
-            value.Text = "to do";
+            int intVar;
+            intVar = 12;
+            value.Text = intVar.ToString();
         }
 
         private void showLongValue()
@@ -77,7 +79,9 @@ namespace PrimitiveDataTypes
 
         private void showDoubleValue()
         {
-            value.Text = "to do";
+            double doubleVar;
+            doubleVar = 2.02;
+            value.Text = doubleVar.ToString();
         }
 
         private void showDecimalValue()
@@ -103,7 +107,9 @@ namespace PrimitiveDataTypes
 
         private void showBoolValue()
         {
-            value.Text = "to do";
+            bool boolVar;
+            boolVar = true;
+            value.Text = boolVar.ToString();
         }
     }
 }
