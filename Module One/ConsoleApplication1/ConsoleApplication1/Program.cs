@@ -10,6 +10,7 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            #region DataTypes, variables and Operators
             int myVar = 2;
             int secondVar;
             secondVar = 10;
@@ -23,6 +24,7 @@ namespace ConsoleApplication1
             Console.WriteLine(product);
             Console.WriteLine(remainder);
             Console.WriteLine(value);
+            #endregion
         }
     }
 }
