@@ -24,6 +24,13 @@ namespace ConsoleApplication1
             Console.WriteLine(product);
             Console.WriteLine(remainder);
             Console.WriteLine(value);
+
+            string firstName = "Tom";
+            string lastName = "Sawyer";
+
+            string fullName = firstName + " " + lastName;
+            Console.WriteLine(fullName);
+            Console.WriteLine("{0} {1}", firstName, lastName);
             #endregion
         }
     }
