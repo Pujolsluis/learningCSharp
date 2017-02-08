@@ -10,38 +10,42 @@ namespace Module_One_Assignment
     {
         static void Main(string[] args)
         {
-            string firstName, lastName;
-            int id, zipPostalCode;
-            string birthday;
-            string addressLine1, addressLine2;
-            string city, stateProvince, country;
+            string firstName, lastName, addressLine1, addressLine2, city, state, country;
+            DateTime birthdate;
+            int zip;
 
-            Console.WriteLine("Student First Name:");
+            Console.WriteLine("Type in your first name:");
             firstName = Console.ReadLine();
-            Console.WriteLine("Student Last Name:");
+            Console.WriteLine("Type in your last name:");
             lastName = Console.ReadLine();
-            Console.WriteLine("Student ID");
-            id = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Student birthday:");
-            birthday = Console.ReadLine();
-            Console.WriteLine("Student Address 1:");
+            Console.WriteLine("Type in your address line 1:");
             addressLine1 = Console.ReadLine();
-            Console.WriteLine("Student Address 2:");
+            Console.WriteLine("Type in your address line 2:");
             addressLine2 = Console.ReadLine();
-            Console.WriteLine("Student city:");
+            Console.WriteLine("Type in your city:");
             city = Console.ReadLine();
-            Console.WriteLine("Student State/Province:");
-            stateProvince = Console.ReadLine();
-            Console.WriteLine("Student ZIP/Postal Code:");
-            zipPostalCode = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Student Country:");
+            Console.WriteLine("Type in your state:");
+            state = Console.ReadLine();
+            Console.WriteLine("Type in your country:");
             country = Console.ReadLine();
+            Console.WriteLine("Type in your zipcode:");
+            zip = int.Parse(Console.ReadLine());
+            Console.WriteLine("Type in your birthdate:");
+            birthdate = DateTime.Parse(Console.ReadLine());
 
-            Console.WriteLine("Student Name: {0} {1}", firstName, lastName);
-            Console.WriteLine("ID: {0}", id.ToString());
-            Console.WriteLine("Birthday: {0}", birthday);
-            Console.WriteLine("Address: {0}, {1}", addressLine1, addressLine2);
-            Console.WriteLine("City: {0} \nState: {1} \nCountry: {2}", city, stateProvince, country);
+            //firstName = "Oliver";
+            //lastName = "Velich";
+            //addressLine1 = "Křižkovského 12";
+            //addressLine2 = "";
+            //city = "Brno";
+            //state = "South Moravia";
+            //country = "Czech Republic";
+            //birthdate = new DateTime(1993, 5, 22);
+            //zip = 60300;
+            Console.WriteLine("Your name is {0} {1}", firstName, lastName);
+            Console.WriteLine("Your address is:\n{0}\n{1}\n{2}, {3}\n{4}\n{5}", addressLine1, addressLine2, zip.ToString(), city, state, country);
+            Console.WriteLine("Your birthday is on {0:d}", birthdate);
+            Console.ReadLine();
 
         }
     }
