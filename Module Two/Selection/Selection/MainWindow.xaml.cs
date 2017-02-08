@@ -48,8 +48,10 @@ namespace Selection
 
         private int dateCompare(DateTime leftHandSide, DateTime rightHandSide)
         {
-            // TO DO
-            return 42;
+            if (leftHandSide == rightHandSide) return 0;
+            else if (leftHandSide < rightHandSide)
+                return -1;
+            else return 1;
         }
 
 
