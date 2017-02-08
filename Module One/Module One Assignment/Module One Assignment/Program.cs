@@ -37,7 +37,12 @@ namespace Module_One_Assignment
             Console.WriteLine("Student Country:");
             country = Console.ReadLine();
 
-           
+            Console.WriteLine("Student Name: {0} {1}", firstName, lastName);
+            Console.WriteLine("ID: {0}", id.ToString());
+            Console.WriteLine("Birthday: {0}", birthday);
+            Console.WriteLine("Address: {0}, {1}", addressLine1, addressLine2);
+            Console.WriteLine("City: {0} \nState: {1} \nCountry: {2}", city, stateProvince, country);
+
         }
     }
 }
