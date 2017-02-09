@@ -48,50 +48,80 @@ namespace MathsOperators
 
         private void addValues()
         {
-            int lhs = int.Parse(lhsOperand.Text);
-            int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            try
+            {
+                int lhs = int.Parse(lhsOperand.Text);
+                int rhs = int.Parse(rhsOperand.Text);
+                int outcome = 0;
 
-            outcome = lhs + rhs;
-            expression.Text = lhsOperand.Text + " + " + rhsOperand.Text;
-            result.Text = outcome.ToString();
+                outcome = lhs + rhs;
+                expression.Text = lhsOperand.Text + " + " + rhsOperand.Text;
+                result.Text = outcome.ToString();
+            }
+            catch (FormatException e)
+            {
+                result.Text = Convert.ToString(e);
+            }
         }
 
         private void subtractValues()
         {
-            int lhs = int.Parse(lhsOperand.Text);
-            int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            try
+            { 
+                int lhs = int.Parse(lhsOperand.Text);
+                int rhs = int.Parse(rhsOperand.Text);
+                int outcome = 0;
             
-            outcome = lhs - rhs;
-            expression.Text = lhsOperand.Text + " - " + rhsOperand.Text;
-            result.Text = outcome.ToString();
+                outcome = lhs - rhs;
+                expression.Text = lhsOperand.Text + " - " + rhsOperand.Text;
+                result.Text = outcome.ToString();
+            }
+            catch (FormatException e)
+            {
+                result.Text = Convert.ToString(e);
+            }
         }
 
         private void multiplyValues()
         {
-            int lhs = int.Parse(lhsOperand.Text);
-            int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
-            
-            outcome = lhs * rhs;
-            expression.Text = lhsOperand.Text + " * " + rhsOperand.Text;
-            result.Text = outcome.ToString();
+            try
+            {
+                int lhs = int.Parse(lhsOperand.Text);
+                int rhs = int.Parse(rhsOperand.Text);
+                int outcome = 0;
+
+                outcome = lhs * rhs;
+                expression.Text = lhsOperand.Text + " * " + rhsOperand.Text;
+                result.Text = outcome.ToString();
+            }
+            catch (FormatException e)
+            {
+                result.Text = Convert.ToString(e);
+            }
         }
 
         private void divideValues()
         {
-            int lhs = int.Parse(lhsOperand.Text);
-            int rhs = int.Parse(rhsOperand.Text);
-            int outcome = 0;
+            try
+            { 
+                int lhs = int.Parse(lhsOperand.Text);
+                int rhs = int.Parse(rhsOperand.Text);
+                int outcome = 0;
             
-            outcome = lhs / rhs;
-            expression.Text = lhsOperand.Text + " / " + rhsOperand.Text;
-            result.Text = outcome.ToString();
+                outcome = lhs / rhs;
+                expression.Text = lhsOperand.Text + " / " + rhsOperand.Text;
+                result.Text = outcome.ToString();
+            }
+            catch (FormatException e)
+            {
+                result.Text = Convert.ToString(e);
+            }
         }
 
         private void remainderValues()
         {
+            try
+            {
             int lhs = int.Parse(lhsOperand.Text);
             int rhs = int.Parse(rhsOperand.Text);
             int outcome = 0;
@@ -99,6 +129,11 @@ namespace MathsOperators
             outcome = lhs % rhs;
             expression.Text = lhsOperand.Text + " % " + rhsOperand.Text;
             result.Text = outcome.ToString();
+            }
+            catch (FormatException e)
+            {
+                result.Text = Convert.ToString(e);
+            }
         }
     }
 }
