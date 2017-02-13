@@ -133,3 +133,32 @@ namespace Module_Three_Assignment
         }
     }
 }
+
+/*
+ * Test Case
+    Luis
+    Pujols
+    Fountain Bleu
+    Kilfk
+    104555
+    New york
+    United States
+    19 july 1995
+    Rosa
+    Perez
+    Crisantemos
+    asdasasdf
+    14450
+    San juan
+    Puerto Rico
+    2 Febrero 1990
+    Algorithms
+    Carlos Joa
+    Software Engineer
+    Engineer
+    256
+    Databases
+    4
+    12
+    Alberto Morillo
+ */
