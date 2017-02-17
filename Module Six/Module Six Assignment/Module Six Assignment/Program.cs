@@ -10,6 +10,7 @@ namespace Module_Six_Assignment
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
         }
     }
 }
