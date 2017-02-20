@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Module_Six_Assignment
 {
-    class Teacher
+    class Teacher : Person
     {
+        public Teacher(string name, string lastname, string birthday) : base(name, lastname, birthday)
+        {
+        }
+
         int employeeID { get; set; }
 
         void GradeTest()
