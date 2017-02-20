@@ -17,6 +17,8 @@ namespace Module_Six_Assignment
         string mCountry { get; set; }
         string mState { get; set; }
 
+        public Person() { }
+
         public Person(string name, string lastname, string birthday, string address1, string address2
             , int postalcode, string country, string state)
         {
