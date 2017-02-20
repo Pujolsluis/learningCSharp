@@ -19,6 +19,13 @@ namespace Module_Six_Assignment
 
         public Person() { }
 
+        public Person(string name, string lastname, string birthday)
+        {
+            mFirstName = name;
+            mLastName = lastname;
+            mBirthday = birthday;
+        }
+
         public Person(string name, string lastname, string birthday, string address1, string address2
             , int postalcode, string country, string state)
         {

@@ -8,5 +8,16 @@ namespace Module_Six_Assignment
 {
     class Teacher
     {
+        int employeeID { get; set; }
+
+        void GradeTest()
+        {
+            Console.WriteLine("Your student test has been graded");
+        }
+
+        void TakeAssistance()
+        {
+            Console.WriteLine("All of your students are present");
+        }
     }
 }
