@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace Module_Six_Assignment
 {
@@ -16,7 +17,10 @@ namespace Module_Six_Assignment
             Teacher teacher1 = new Teacher("Francia", "Martinez", "2 March 1975");
             Teacher teacher2 = new Teacher("Roberto", "Campusano", "15 December 1964");
             Teacher teacher3 = new Teacher("Edward", "Garcia", " 22 November 1968");
-            Student[] students = { student1, student2, student3 };
+            ArrayList students = new ArrayList();
+            students.Add(student1);
+            students.Add(student2);
+            students.Add(student3);
             Teacher[] teachers = { teacher1, teacher2, teacher3 };
             Course course = new Course("Programming with C#", teachers, 4, 180, students);
             Degree degree = new Degree("Bachelor of Science", 256, course);
