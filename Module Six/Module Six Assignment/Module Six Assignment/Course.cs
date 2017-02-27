@@ -24,5 +24,13 @@ namespace Module_Six_Assignment
             mStudents = students;
         }
 
+        public void ListStudents()
+        {
+            foreach (Student student in mStudents)
+            {
+                Console.WriteLine("Student Name: {0} {1}", student.mFirstName, student.mLastName);
+            }
+
+        }
     }
 }

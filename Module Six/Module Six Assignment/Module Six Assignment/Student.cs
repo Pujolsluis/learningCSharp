@@ -17,24 +17,25 @@ namespace Module_Six_Assignment
         public Student(string name, string lastname, string birthday) : base(name, lastname, birthday)
         {
             mStudentCount++;
+            Grades = new Stack();
         }
 
-        void TakeTest()
+        public void TakeTest()
         {
             char score = 'A';
             Console.WriteLine("You got an " + score);
         }
-        void SolveAProblem()
+        public void SolveAProblem()
         {
             Console.WriteLine("You have solved the assignment");
         }
 
-        void AddGrade(string grade)
+        public void AddGrade(string grade)
         {
             Grades.Push(grade);
         }
-        
-        void RemoveGrade()
+
+        public void RemoveGrade()
         {
             if (Grades.Count > 0) Grades.Pop();
         }

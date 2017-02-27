@@ -12,8 +12,23 @@ namespace Module_Six_Assignment
         static void Main(string[] args)
         {
             Student student1 = new Student("Luis", "Pujols", "19 july 1995");
+            student1.AddGrade("A");
+            student1.AddGrade("A");
+            student1.AddGrade("A");
+            student1.AddGrade("B");
+            student1.AddGrade("B+");
             Student student2 = new Student("Maria", "Polanco", "1 january 1990");
+            student1.AddGrade("A");
+            student1.AddGrade("B");
+            student1.AddGrade("A");
+            student1.AddGrade("B");
+            student1.AddGrade("B+");
             Student student3 = new Student("Pedro", "Gonzales", "5 August 1985");
+            student1.AddGrade("B");
+            student1.AddGrade("A");
+            student1.AddGrade("C");
+            student1.AddGrade("B");
+            student1.AddGrade("B+");
             Teacher teacher1 = new Teacher("Francia", "Martinez", "2 March 1975");
             Teacher teacher2 = new Teacher("Roberto", "Campusano", "15 December 1964");
             Teacher teacher3 = new Teacher("Edward", "Garcia", " 22 November 1968");
@@ -29,6 +44,7 @@ namespace Module_Six_Assignment
             Console.WriteLine("The {0} program contains the {1} degree\n", uprogram.mName, uprogram.mDegrees.mDegreeName);
             Console.WriteLine("The {0} degree contains the {1} course\n", uprogram.mDegrees.mDegreeName, uprogram.mDegrees.mCourse.mName);
             Console.WriteLine("The {0} course contains {1} student(s)\n", uprogram.mDegrees.mCourse.mName, Student.mStudentCount);
+            course.ListStudents();
         }
     }
 }

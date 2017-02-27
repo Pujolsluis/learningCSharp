@@ -8,14 +8,14 @@ namespace Module_Six_Assignment
 {
     class Person
     {
-        string mFirstName { get; set; }
-        string mLastName { get; set; }
-        string mBirthday { get; set; }
-        string mAddress1 { get; set; }
-        string mAddress2 { get; set; }
-        int mPostalCode { get; set; }
-        string mCountry { get; set; }
-        string mState { get; set; }
+        public string mFirstName { get; set; }
+        public string mLastName { get; set; }
+        public string mBirthday { get; set; }
+        public string mAddress1 { get; set; }
+        public string mAddress2 { get; set; }
+        public int mPostalCode { get; set; }
+        public string mCountry { get; set; }
+        public string mState { get; set; }
 
         public Person() { }
 
