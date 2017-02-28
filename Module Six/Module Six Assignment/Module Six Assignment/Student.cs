@@ -10,14 +10,14 @@ namespace Module_Six_Assignment
     class Student : Person
     {
         int studentID { get; set; }
-        Stack Grades { get; set; }
+        Stack<string> Grades { get; set; }
         public static int mStudentCount = 0;
         
 
         public Student(string name, string lastname, string birthday) : base(name, lastname, birthday)
         {
             mStudentCount++;
-            Grades = new Stack();
+            Grades = new Stack<string>();
         }
 
         public void TakeTest()

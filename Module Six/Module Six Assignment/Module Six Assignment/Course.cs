@@ -11,11 +11,11 @@ namespace Module_Six_Assignment
     {
         public string mName { get; set; }
         public Teacher[] mTeacher { get; set; }
-        public ArrayList mStudents { get; set; }
+        public List<Student> mStudents { get; set; }
         public int mCredits { get; set; }
         public int mRequiredCredits { get; set; }
 
-        public Course(string name, Teacher[] teachers, int credits, int requiredCredits, ArrayList students)
+        public Course(string name, Teacher[] teachers, int credits, int requiredCredits, List<Student> students)
         {
             mName = name;
             mTeacher = teachers;

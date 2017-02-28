@@ -32,7 +32,7 @@ namespace Module_Six_Assignment
             Teacher teacher1 = new Teacher("Francia", "Martinez", "2 March 1975");
             Teacher teacher2 = new Teacher("Roberto", "Campusano", "15 December 1964");
             Teacher teacher3 = new Teacher("Edward", "Garcia", " 22 November 1968");
-            ArrayList students = new ArrayList();
+            List<Student> students = new List<Student>();
             students.Add(student1);
             students.Add(student2);
             students.Add(student3);
