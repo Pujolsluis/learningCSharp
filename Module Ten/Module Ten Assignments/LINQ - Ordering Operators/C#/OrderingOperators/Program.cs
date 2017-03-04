@@ -15,7 +15,7 @@ namespace OrderingOperators
 
             //Comment or uncomment the method calls below to run or not
 
-              samples.Linq28(); // This sample uses orderby to sort a list of words alphabetically
+             // samples.Linq28(); // This sample uses orderby to sort a list of words alphabetically
 
             //samples.Linq29(); // This sample uses orderby to sort a list of words by length
 
@@ -25,7 +25,7 @@ namespace OrderingOperators
             //samples.Linq31(); // This sample uses an  OrderBy clause with a custom comparer to do a case-insensitive 
                                 // sort of the words in an array
 
-            //samples.Linq32(); // This sample uses  orderby and  descending to sort a list of doubles from highest to 
+            samples.Linq32(); // This sample uses  orderby and  descending to sort a list of doubles from highest to 
                                 // lowest
 
             //samples.Linq33(); // This sample uses  orderby to sort a list of products by units in stock from highest 
@@ -109,6 +109,11 @@ namespace OrderingOperators
             {
                 List<Product> products = GetProductList();
 
+                var sortedProducts =
+                    from prod in products
+                    orderby prod.ProductName descending
+                    select prod;
+
                 //TODO: Enter code here to order products by name
                 // You don't need to write code to output these values as this next line of code does it for you
 
@@ -144,7 +149,10 @@ namespace OrderingOperators
                 double[] doubles = { 1.7, 2.3, 1.9, 4.1, 2.9 };
 
                 //TODO: Enter code here to order this list in descending order
-
+                var sortedDoubles =
+                    from sDoubles in doubles
+                    orderby sDoubles descending
+                    select sDoubles;
                 Console.WriteLine("The doubles from highest to lowest:");
                 foreach (var d in sortedDoubles)
                 {
