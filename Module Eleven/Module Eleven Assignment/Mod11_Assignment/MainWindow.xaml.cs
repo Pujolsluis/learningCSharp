@@ -37,12 +37,12 @@ namespace Mod11_Assignment
             newStudent.LastName = txtLastName.Text;
             newStudent.City = txtCity.Text;
             ClearForm();
-
-            AddToCollection(newStudent);
+            Task addStudent = new Task(() => AddToCollection(newStudent));
+            addStudent.Start();
+            //AddToCollection(newStudent);
         }
 
-        
-        private void AddToCollection(Student student)
+        private  void AddToCollection(Student student)
         {
             // This line of code is intended to simulate network or database latency
             // It causes a non-responsive UI
