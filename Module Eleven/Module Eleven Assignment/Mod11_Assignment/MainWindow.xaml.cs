@@ -39,7 +39,6 @@ namespace Mod11_Assignment
             ClearForm();
             Task addStudent = new Task(() => AddToCollection(newStudent));
             addStudent.Start();
-            //AddToCollection(newStudent);
         }
 
         private  void AddToCollection(Student student)
